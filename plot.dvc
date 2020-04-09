@@ -1,0 +1,13 @@
+md5: 626387c85aa55dbee6f60d216f29385b
+cmd: Rscript scripts/generate_gif.R
+deps:
+- md5: 79e1f4ae7213b81f67f99034691a082a
+  path: scripts/outputs/covid19_preprocessado.csv
+- md5: 6bd411fcfa8858308c75a1db1fb4ca6e
+  path: scripts/outputs/mortalidade_preprocessada.csv
+outs:
+- md5: ad012f8ef535c6cd189f17d7db143206
+  path: scripts/outputs/covid19_compar.gif
+  cache: true
+  metric: false
+  persist: false
