@@ -1,0 +1,11 @@
+md5: faec6439a32559e67d2979a37504b9b2
+cmd: Rscript scripts/preprocess_mortalidade.R
+deps:
+- md5: 6b536d940bc6257abe3dd1e5b4b30816
+  path: data/mortalidade.csv
+outs:
+- md5: 6bd411fcfa8858308c75a1db1fb4ca6e
+  path: scripts/outputs/mortalidade_preprocessada.csv
+  cache: true
+  metric: false
+  persist: false
