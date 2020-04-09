@@ -1,0 +1,11 @@
+md5: 7cd40e0c003106484dad4df724c5b97d
+cmd: Rscript scripts/preprocess_covid.R
+deps:
+- md5: 5c91771f1c1772155f247028b7738be8
+  path: data/covid19.csv
+outs:
+- md5: 79e1f4ae7213b81f67f99034691a082a
+  path: scripts/outputs/covid19_preprocessado.csv
+  cache: true
+  metric: false
+  persist: false

@@ -28,6 +28,8 @@ mortalidade_sp <- read_lines('data/mortalidade.csv') %>%
 
 # Preprocessando dados de mortalidade de SP -------------------------------
 
+glimpse(mortalidade_sp)
+
 # Limpar começo do nome das doenças
 mortalidade_sp %>%
  select(`Causa - CID-BR-10`) %>%
