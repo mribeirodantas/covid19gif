@@ -27,14 +27,10 @@ covid19 %>%
  # Nosso interesse é em SP
  filter(sigla == 'SP') %>%
  # E novos óbitos diários
- select(date, obitosNovos) %>%
+ select(date, deaths_inc) %>%
  # Portanto, não nos importa
  # quando não tinha óbito algum
- filter(obitosNovos != 0) -> covid19
-
-# Quando eu gerei o GIF que estou ensinando a fazer aqui, ainda não tinha
-# terminado o dia 8, portanto vou parar aqui também no dia 7.
-slice(covid19, 1:(n()-1)) -> covid19
+ filter(deaths_inc != 0) -> covid19
 
 # Melhorar o nome das variáveis
 colnames(covid19) <- c('data', 'n_obitos_dia')
